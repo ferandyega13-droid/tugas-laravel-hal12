@@ -19,3 +19,12 @@ route::get('/about/{nama}',function($nama){
 });
 
 
+//routes tugas kalkulator
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\KalkulatorController;
+
+// Route Latihan Halaman 12
+Route::get('/daftar/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/kalkulator/segitiga', [KalkulatorController::class, 'segitiga']);
+Route::post('/kalkulator/segitiga/proses', [KalkulatorController::class, 'prosesSegitiga']);
+
