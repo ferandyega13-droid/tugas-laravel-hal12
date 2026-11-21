@@ -81,3 +81,27 @@ Repository ini berisi penyelesaian tugas latihan **Bab Parsing Data ke View (Hal
 
 - **Nama:** Ferandy Ega Putra Pratama
 - **GitHub:** [@ferandyega13-droid](https://github.com/ferandyega13-droid)
+
+- ---
+
+## 🚀 Lanjutan Praktikum Laravel (Sistem Templating, CRUD, Migration & Autentifikasi)
+
+Pengembangan lanjutan pada repository yang sama mengikuti *Modul Praktikum Framework Laravel* (Halaman 12–38) dengan riwayat *commit* terstruktur per Bab.
+
+### 📋 Daftar Bab & Fitur Lanjutan
+1. **Sistem Templating (Halaman 12–18)**
+   - Pemisahan layout utama (`dashboard.blade.php`) menggunakan direktif Blade `@include`, `@yield`, dan `@extends`[cite: 16, 17].
+   - Halaman turunan `/dashboard` (Home) dan `/gallery` (Gallery) dengan styling `public/css/style.css`[cite: 13, 17, 18].
+2. **Membuat CRUD Data Pegawai (Halaman 19–27)**
+   - Pengelolaan tabel `employes` menggunakan Model `Employe` dan `EmployeController`[cite: 19, 20, 21].
+   - Fitur lengkap: Tampil Data (`/employe`), Tambah Data (`/employe/create`), Edit Data (`/employe/edit/{id}`), dan Hapus Data[cite: 21, 22, 23, 25, 26].
+3. **Migration, Seeder & Factory (Halaman 27–33)**
+   - Pembuatan skema tabel `users` dan `employes` melalui Laravel Migration[cite: 27, 29, 30].
+   - Pengisian akun admin (`UserSeeder`) serta 10 data dummy pegawai menggunakan Faker (`EmployeSeeder`)[cite: 30, 31, 32].
+4. **Membuat Autentifikasi (Halaman 33–38)**
+   - Halaman Login (`/`) menggunakan `AuthController` dengan verifikasi `Hash::check` dan `Session`[cite: 34, 35, 36].
+   - Proteksi rute dashboard dan CRUD menggunakan custom middleware `IsLogin` (`islogin`) serta fitur Logout (`/logout`)[cite: 37, 38].
+
+### 🔐 Akun Login (Hasil Seeder)
+- **Email:** `ferandyega12@gmail.com`
+- **Password:** `123456`[cite: 30]
