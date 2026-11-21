@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\KalkulatorController;
+use App\Http\Controllers\DashboardController;
 
 //import controller web dan taruh di routes dengan nama alias web
 
@@ -19,12 +22,11 @@ route::get('/about/{nama}',function($nama){
 });
 
 
-//routes tugas kalkulator
-use App\Http\Controllers\MahasiswaController;
-use App\Http\Controllers\KalkulatorController;
-
 // Route Latihan Halaman 12
 Route::get('/daftar/mahasiswa', [MahasiswaController::class, 'index']);
 Route::get('/kalkulator/segitiga', [KalkulatorController::class, 'segitiga']);
 Route::post('/kalkulator/segitiga/proses', [KalkulatorController::class, 'prosesSegitiga']);
 
+// Route Bab Sistem Templating
+Route::get('/dashboard', [DashboardController::class, 'home']);
+Route::get('/gallery', [DashboardController::class, 'gallery']);
